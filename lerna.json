@@ -1,6 +1,7 @@
 {
   "lerna": "6",
   "conventionalCommits": true,
+  "useWorkspaces" : true,
   "npmClient": "yarn",
   "npmClientArgs": [
     "--no-lockfile"

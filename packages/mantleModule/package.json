@@ -1,0 +1,46 @@
+{
+  "name": "mantleModule",
+  "version": "0.0.1",
+  "author": "Siddharth Chadha <siddharth@assetmantle.one>",
+  "description": "A TS/JS SDK for AssetMantle Chain",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts",
+  "homepage": "https://github.com/Sid-AssetMantle/mantleModule",
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sid-AssetMantle/mantleModule"
+  },
+  "bugs": {
+    "url": "https://github.com/Sid-AssetMantle/mantleModule/issues"
+  },
+  "scripts": {
+    "copy": "copyfiles -f ../../LICENSE README.md package.json dist",
+    "clean": "rimraf dist/**",
+    "prepare": "npm run build",
+    "codegen": "ts-node scripts/codegen.ts",
+    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "lint": "eslint . --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@cosmology/telescope": "^1.0.1",
+    "@protobufs/cosmos": "^0.1.0",
+    "@protobufs/cosmos_proto": "^0.0.10",
+    "@protobufs/ibc": "^0.1.0"
+  },
+  "dependencies": {
+    "@cosmjs/encoding": "0.32.3",
+    "@cosmjs/math": "0.32.3",
+    "@cosmjs/amino": "0.32.3",
+    "@cosmjs/proto-signing": "0.32.3",
+    "@cosmjs/stargate": "0.32.3"
+  },
+  "keywords": []
+}

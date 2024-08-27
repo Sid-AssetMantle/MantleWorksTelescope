@@ -24,7 +24,7 @@
     "clean": "rimraf dist/**",
     "prepare": "npm run build",
     "codegen": "ts-node scripts/codegen.ts",
-    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "build": "npm run clean; tsc --noEmitOnError; tsc -p tsconfig.esm.json; npm run copy",
     "lint": "eslint . --fix",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -44,5 +44,5 @@
     "@cosmjs/stargate": "0.32.3"
   },
   "keywords": [],
-  "gitHead": "fb677fc7922785daf9d76af1431adf729aaed322"
+  "gitHead": "bb643b94ef8df19142bc948fb456194b27d79136"
 }

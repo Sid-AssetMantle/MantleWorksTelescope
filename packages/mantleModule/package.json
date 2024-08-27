@@ -1,6 +1,6 @@
 {
   "name": "mantleModule",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Siddharth Chadha <siddharth@assetmantle.one>",
   "description": "A TS/JS SDK for AssetMantle Chain",
   "main": "index.js",

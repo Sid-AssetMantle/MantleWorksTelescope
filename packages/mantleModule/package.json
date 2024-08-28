@@ -1,5 +1,5 @@
 {
-  "name": "@siddharth/mantlemodule",
+  "name": "@siddharthchadha/mantlemodule",
   "version": "0.0.8",
   "author": "Siddharth Chadha <siddharth@assetmantle.one>",
   "description": "A TS/JS SDK for AssetMantle Chain",
@@ -44,5 +44,5 @@
     "@cosmjs/stargate": "0.32.3"
   },
   "keywords": [],
-  "gitHead": "dacdfd6924f1a492a4569f9e0417a7e7f9ed53b8"
+  "gitHead": "bc05dc0a110eb5b66f470c47482188c0b869b5a5"
 }
